@@ -8,9 +8,10 @@ import java.util.HashSet;
 public class TallyRunner {
 
     private static ArrayList<String[]> responses = new ArrayList<String[]>();
-    private static ArrayList<String> firstYearWithName = new ArrayList<String>();
     private static HashMap<String, Integer> results = new HashMap<String, Integer>();
     private static HashSet<String> usedStudentNumbers = new HashSet<String>();
+    private static ArrayList<String[]> firstYearWithName = new ArrayList<String[]>();
+    private static ArrayList<String[]> unknownNumber = new ArrayList<String[]>();
 
     public static void main(String[] args) {
 
@@ -42,7 +43,9 @@ public class TallyRunner {
                     results = tallyVotes.tally(results, candidates);
                 } else {
                     if (!studentName.equals("")) {
-                        firstYearWithName.add(studentNumber + " " + studentName);
+                        firstYearWithName.add(line);
+                    } else {
+                        unknownNumber.add(line);
                     }
                 }
                 usedStudentNumbers.add(studentNumber);
@@ -53,7 +56,8 @@ public class TallyRunner {
 
         resultsPrinter();
         System.out.println(duplicateCount + " Duplicate Student Number(s) During Tally Detected"); // should be 0
-        firstYearPrinter();
+        unknownResultsPrinter("Unknown Numbers w/ Names:", firstYearWithName);
+        unknownResultsPrinter("Unknown Numbers:", unknownNumber);
     }
 
     private static void resultsPrinter() {
@@ -67,15 +71,17 @@ public class TallyRunner {
         }
     }
 
-    private static void firstYearPrinter() {
+    private static void unknownResultsPrinter(String startMessage, ArrayList<String[]> specifiedArrayList) {
         // print out first years that qualify
-        System.out.println("Non-matching Numbers + Names:");
-        if (firstYearWithName.size() > 0) {
-            for (String line: firstYearWithName) {
-                System.out.println(line);
+        System.out.println(startMessage);
+        if (specifiedArrayList.size() > 0) {
+            for (String[] line: specifiedArrayList) {
+
+                System.out.println(line[10] + " " + line[11]);
             }
         } else {
             System.out.println("- None");
         }
     }
+
 }

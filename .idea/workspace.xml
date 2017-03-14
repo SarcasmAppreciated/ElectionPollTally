@@ -7,10 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04449d67-8825-44f6-8d59-24a10dcf9057" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/VoteCounter/com/company/TallyRunner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/VoteCounter/com/company/TallyVotes.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/VoteCounter/com/company/VerifyHelper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/VoteCounter/com/company/VerifyStudentNumber.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/TallyRunner.java" afterPath="$PROJECT_DIR$/src/com/company/TallyRunner.java" />
     </list>
     <ignored path="ElectionPollTally.iws" />
@@ -40,10 +36,15 @@
       <file leaf-file-name="TallyRunner.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/TallyRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="793">
+              <caret line="70" column="9" lean-forward="true" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#220#230#0" expanded="true" />
+                <element signature="e#299#316#0" expanded="true" />
+                <element signature="e#387#395#0" expanded="true" />
+                <element signature="e#471#481#0" expanded="true" />
+                <element signature="e#553#563#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -52,7 +53,7 @@
       <file leaf-file-name="TallyVotes.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/TallyVotes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1003">
+            <state relative-caret-position="986">
               <caret line="59" column="13" lean-forward="false" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -114,8 +115,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -162,6 +161,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -466,7 +467,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26865673" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27132195" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -537,10 +538,40 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/company/TallyRunner.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#220#230#0" expanded="true" />
+            <element signature="e#299#316#0" expanded="true" />
+            <element signature="e#387#395#0" expanded="true" />
+            <element signature="e#471#481#0" expanded="true" />
+            <element signature="e#553#563#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/TallyVotes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="59" column="13" lean-forward="false" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/TallyRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1088">
           <caret line="67" column="16" lean-forward="true" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#220#230#0" expanded="true" />
+            <element signature="e#299#316#0" expanded="true" />
+            <element signature="e#387#395#0" expanded="true" />
+            <element signature="e#471#481#0" expanded="true" />
+            <element signature="e#553#563#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -561,6 +592,11 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#220#230#0" expanded="true" />
+            <element signature="e#299#316#0" expanded="true" />
+            <element signature="e#387#395#0" expanded="true" />
+            <element signature="e#471#481#0" expanded="true" />
+            <element signature="e#553#563#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -571,6 +607,11 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#220#230#0" expanded="true" />
+            <element signature="e#299#316#0" expanded="true" />
+            <element signature="e#387#395#0" expanded="true" />
+            <element signature="e#471#481#0" expanded="true" />
+            <element signature="e#553#563#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -581,6 +622,11 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#220#230#0" expanded="true" />
+            <element signature="e#299#316#0" expanded="true" />
+            <element signature="e#387#395#0" expanded="true" />
+            <element signature="e#471#481#0" expanded="true" />
+            <element signature="e#553#563#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -591,6 +637,11 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#220#230#0" expanded="true" />
+            <element signature="e#299#316#0" expanded="true" />
+            <element signature="e#387#395#0" expanded="true" />
+            <element signature="e#471#481#0" expanded="true" />
+            <element signature="e#553#563#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -601,6 +652,11 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#220#230#0" expanded="true" />
+            <element signature="e#299#316#0" expanded="true" />
+            <element signature="e#387#395#0" expanded="true" />
+            <element signature="e#471#481#0" expanded="true" />
+            <element signature="e#553#563#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -611,6 +667,11 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#220#230#0" expanded="true" />
+            <element signature="e#299#316#0" expanded="true" />
+            <element signature="e#387#395#0" expanded="true" />
+            <element signature="e#471#481#0" expanded="true" />
+            <element signature="e#553#563#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -661,7 +722,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/TallyVotes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
+        <state relative-caret-position="986">
           <caret line="59" column="13" lean-forward="false" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -671,10 +732,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/TallyRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="793">
+          <caret line="70" column="9" lean-forward="true" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#220#230#0" expanded="true" />
+            <element signature="e#299#316#0" expanded="true" />
+            <element signature="e#387#395#0" expanded="true" />
+            <element signature="e#471#481#0" expanded="true" />
+            <element signature="e#553#563#0" expanded="true" />
           </folding>
         </state>
       </provider>
