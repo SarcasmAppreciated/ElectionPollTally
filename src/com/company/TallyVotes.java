@@ -29,7 +29,7 @@ public class TallyVotes {
     private HashMap<String, String> assembleBallot (String[] candidates) {
         HashMap<String, String> candidateMap = new HashMap<String, String>();
 
-        for(int i = 0; i < candidates.length; i++) {
+        for (int i = 0; i < candidates.length; i++) {
             candidateMap.put(candidates[i], positions.get(i));
         }
 
@@ -44,17 +44,18 @@ public class TallyVotes {
             String name = entry.getKey();
             String position = entry.getValue();
 
-            if(!name.equals("Abstain")) {
+            if(!name.equals("Abstain") && !name.equals("")) {
                 if (!votes.containsKey(name)) {
                     votes.put(name, 1);
                 } else {
                     votes.put(name, votes.get(name) + 1);
                 }
-            } else {
-                if (!votes.containsKey(name)) {
-                    votes.put(name + " " + position, 1);
+            } else if (name.equals("Abstain")) {
+                String combinedKey = name + " " + position;
+                if (!votes.containsKey(combinedKey)) {
+                    votes.put(combinedKey, 1);
                 } else {
-                    votes.put(name + " " + position, votes.get(name) + 1);
+                    votes.put(combinedKey, votes.get(combinedKey) + 1);
                 }
             }
         }
