@@ -14,7 +14,7 @@ public class VerifyStudentNumber {
     }
 
     public boolean checkInList(String studentNumber) {
-        if(checkStudentNumberLength(studentNumber) && studentNumberExistsInList(studentNumber)) {
+        if (checkStudentNumberLength(studentNumber) && studentNumberExistsInList(studentNumber)) {
             return true;
         } else {
             return false;
@@ -23,7 +23,7 @@ public class VerifyStudentNumber {
 
     /* Check student numbers vs CSV */
     private boolean checkStudentNumberLength(String studentNumber){
-        if(studentNumber.length() == 8)  {
+        if (studentNumber.length() == 8)  {
             return true;
         } else {
             return false;
@@ -35,12 +35,12 @@ public class VerifyStudentNumber {
         VerifyHelper verifyHelper = new VerifyHelper();
         ArrayList<String> responses = verifyHelper.loadStudentListCSV(csvFileLocation);
 
-        if((responses.size() == 0) || (responses == null)) {
+        if ((responses.size() == 0) || (responses == null)) {
             System.out.println("File not loaded - aborted");
             return false;
         }
 
-        if(responses.contains(studentNumber)) {
+        if (responses.contains(studentNumber)) {
             return true;
         } else {
             return false;
