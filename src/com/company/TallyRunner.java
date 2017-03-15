@@ -17,10 +17,12 @@ public class TallyRunner {
 
         String pathOfResponses = "E:\\Users\\Benson\\Desktop\\responses.csv";
         String pathOfStudentNumbers = "E:\\Users\\Benson\\Desktop\\list.csv";
+        boolean acceptFirstYears = true;
 
         if (args.length > 0) {
             pathOfResponses = args[0];
             pathOfStudentNumbers = args[1];
+            acceptFirstYears = Boolean.parseBoolean(args[2]);
         }
 
         int duplicateCount = 0;
@@ -37,12 +39,15 @@ public class TallyRunner {
             String studentName = line[11];
 
             if (!usedStudentNumbers.contains(studentNumber)) {
+                TallyVotes tallyVotes = new TallyVotes();
+                String[] candidates = Arrays.copyOfRange(line, 12, line.length);
                 if (verifyStudentNumber.checkInList(studentNumber)) {
-                    TallyVotes tallyVotes = new TallyVotes();
-                    String[] candidates = Arrays.copyOfRange(line, 12, line.length);
                     results = tallyVotes.tally(results, candidates);
                 } else {
-                    if (!studentName.equals("")) {
+                    if (!studentName.equals("") && acceptFirstYears) {
+                        results = tallyVotes.tally(results, candidates);
+                        firstYearWithName.add(line);
+                    } else if (!studentName.equals("")) {
                         firstYearWithName.add(line);
                     } else {
                         unknownNumber.add(line);
@@ -54,15 +59,20 @@ public class TallyRunner {
             }
         }
 
-        resultsPrinter();
+        resultsPrinter(acceptFirstYears);
         System.out.println(duplicateCount + " Duplicate Student Number(s) During Tally Detected"); // should be 0
         unknownResultsPrinter("Unknown Numbers w/ Names:", firstYearWithName);
         unknownResultsPrinter("Unknown Numbers:", unknownNumber);
     }
 
-    private static void resultsPrinter() {
+    private static void resultsPrinter(boolean acceptFirstYears) {
         // print out first years that qualify
-        System.out.println("Results:");
+        if (acceptFirstYears) {
+            System.out.println("Results w/ First Years with Names Counted:");
+        } else {
+            System.out.println("Results:");
+        }
+
         for (HashMap.Entry<String, Integer> entry : results.entrySet()) {
             String key = entry.getKey();
             String value = entry.getValue().toString();
