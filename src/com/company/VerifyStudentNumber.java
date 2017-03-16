@@ -22,7 +22,7 @@ public class VerifyStudentNumber {
     }
 
     /* Check student numbers vs CSV */
-    private boolean checkStudentNumberLength(String studentNumber){
+    public boolean checkStudentNumberLength(String studentNumber){
         if (studentNumber.length() == 8)  {
             return true;
         } else {

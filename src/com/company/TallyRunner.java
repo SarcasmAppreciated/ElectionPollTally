@@ -17,7 +17,7 @@ public class TallyRunner {
 
         String pathOfResponses = "E:\\Users\\Benson\\Desktop\\responses.csv";
         String pathOfStudentNumbers = "E:\\Users\\Benson\\Desktop\\list.csv";
-        boolean acceptFirstYears = true;
+        boolean acceptFirstYears = false;
 
         if (args.length > 0) {
             pathOfResponses = args[0];
@@ -44,7 +44,7 @@ public class TallyRunner {
                 if (verifyStudentNumber.checkInList(studentNumber)) {
                     results = tallyVotes.tally(results, candidates);
                 } else {
-                    if (!studentName.equals("") && acceptFirstYears) {
+                    if (verifyStudentNumber.checkStudentNumberLength(studentNumber) && acceptFirstYears) {
                         results = tallyVotes.tally(results, candidates);
                         firstYearWithName.add(line);
                     } else if (!studentName.equals("")) {
@@ -55,7 +55,9 @@ public class TallyRunner {
                 }
                 usedStudentNumbers.add(studentNumber);
             } else {
-                duplicateCount++;
+                if (!line[0].equals("Incomplete")) {
+                    duplicateCount++;
+                }
             }
         }
 
