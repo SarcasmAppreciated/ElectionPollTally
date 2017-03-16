@@ -41,7 +41,14 @@ public class VerifyHelper {
             scan.nextLine(); // Removes heading line
             while (scan.hasNextLine()) {
                 String line = scan.nextLine();
-                String[] splitLine = line.split("\"\t\"");
+                line = line.replace("\"\t\"","\tR_E_P_L_A_C_E_C_H_A_R");
+                line = line.replace("\"", "");
+                String[] splitLine = line.split("\t");
+
+                for (int i = 0; i < splitLine.length; i++) {
+                    splitLine[i] = splitLine[i].replace("R_E_P_L_A_C_E_C_H_A_R","");
+                }
+
                 responses.add(splitLine);
         }
 
